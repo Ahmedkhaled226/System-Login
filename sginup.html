@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page SignIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+
+
+</head>
+
+<body>
+    <span class="d-none" id="username"></span>
+
+    <div class="container my-5 text-center py-5 ">
+        <div class="group m-auto  p-5">
+            <h1>Smart Login System</h1>
+
+            <input oninput="nameSignUpValid()" id="signupName" class="form-control my-3" placeholder="Enter your name"
+                type="text">
+            <p id="msgSignupName" class=" d-none"></p>
+            <input oninput="emailSignUpValid()" id="signupEmail" class="form-control my-3"
+                placeholder="Enter your email" type="email">
+            <p id="msgSignupEmail" class=" d-none"></p>
+
+
+            <input oninput="passwordSignUpValid()" id="signupPassword" class="form-control my-3"
+                placeholder="Enter  password" type="password">
+            <p id="msgSignupPassword" class=" d-none"></p>
+            <p id="exist"></p>
+
+
+            <button onclick="signUp()" id="btnSignUp" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p id="alertSuccess" class="alert alert-success d-none">Success</p>
+
+            <p class="text-white">You have an account? <a class="" href="index.html">Signin</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
